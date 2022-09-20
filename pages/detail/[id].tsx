@@ -119,7 +119,7 @@ const Detail = ({ postDetails }: GetUserDetailsByIDTypes) => {
         <div className="lg:mt-15 mt-10">
           <div className="flex flex-row gap-3 p-2 cursor-pointer font-semibold rounded">
             <div className="ml-4 mt-4 md:w-10 md:h-10 w-16 h-16">
-              <Link href="/">
+              <Link href={`/profile/${post.postedBy._id}`}>
                 <>
                   <Image 
                     width={48} 
@@ -133,7 +133,7 @@ const Detail = ({ postDetails }: GetUserDetailsByIDTypes) => {
               </Link>
             </div>
             <div>
-            <Link href="/">
+            <Link href={`/profile/${post.postedBy._id}`}>
               <div className="mt-3 flex flex-col gap-2">
                 <p className="flex gap-2 items-center md:text-md font-bold text-primary">
                   {post.postedBy.userName} {' '} <GoVerified className="text-blue-400 text-md" />
