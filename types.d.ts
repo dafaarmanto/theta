@@ -26,6 +26,7 @@ export interface Video {
     _key: string;
     postedBy: {
       _ref: string;
+      _id: string;
     };
   }[];
   userId: string;
