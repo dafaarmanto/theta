@@ -90,7 +90,7 @@ function Navbar() {
         ) : (
           <GoogleLogin 
             onSuccess={(res) => createOrGetUser(res, addUser)}
-            onError={() => console.log('Error')}
+            onError={() => {}}
           />
         )}
       </div>
